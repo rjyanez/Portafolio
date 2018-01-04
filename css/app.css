@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+* {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+	border:0;
+	color: #000000
+	font-size: 16px;
+	line-height: 22.4px;
+}
+h2, h3, h4{
+	font-family: 'Bitter', serif;
+}
+h2{
+	color: rgb(50, 61, 66);
+	font-size: 32px;
+	line-height: 44,8px;
+}
+h3{
+	font-size: 24px;
+	line-height: 33,6px;
+}
+.header{
+	background-image: url('../img/portada.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%; 
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.header h1{
+	color: #ffffff;
+	line-height: 90px;
+	font-size: 95px;
+	font-weight: bold;
+	padding-top: 13%;
+	margin-left: 7%;	
+}
+.header h2{
+	color: #000000;
+	background-color: rgb(255,254,183); 
+	margin-left: 7%;
+	margin-bottom: 15%;
+	display: inline-block;
+	padding: 8px 20px;	
+}
+.menu{
+	width: 100%;	
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%);/*  IE10+ */  	
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* Mozilla Firefox   */	
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* Opera */  	
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255,255,255,0)), color-stop(100, rgba(50,84,101,0.8))); /* Webkit (Safari/Chrome 10) */  	
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* Webkit (Chrome 11+) */  	
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* W3C Markup */  
+}
+.menu ul{
+	float: right;	
+}
+.menu li{ 
+	padding: 15px 25px;
+	display: inline-block;
+}
+.menu a {
+	color: #ffffff;
+	text-decoration: none;	
+	width: 100%;
+}
+.titulo{
+	padding-top: 70px;
+	text-align: center;	
+}
+.descipcion{
+	padding:20px;
+	text-align: center;
+}
+.proyecto{ 
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.disiplinas{ 
+	width:100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 100px;
+}
+.proyecto div{
+	width: 50%;
+	flex-grow:1;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	flex-direction: column; 
+	position: relative;   
+}
+.disiplinas div{
+	width: 40%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+	flex-direction: column; 
+	position: relative;   
+}
+.media img {
+	width: 100%;
+	height: 420px;
+}
+.media div{
+	width: 100%;
+    background:rgba(255, 254, 183, 0.9); 
+    top: 0;
+    height: 20px;
+    position: absolute;
+}
+
+.media div:hover{
+	height: 420px;
+}
+.derecha{
+	align-items: flex-end;
+}
+.izquierda{
+	align-items: flex-start;
+}.resumen{
+	background-color: rgb(243,243,243);	
+}
+.resumen h3{
+	padding: 10px 20px 0 20px;
+	display: inline-block;
+}
+.resumen p{
+	padding: 10px 20px 10px 20px ;
+	text-align: justify;
+}
+.disiplinas p{
+	padding: 15px 0 15px 0;
+}
+
+.disiplinas .grafico{
+	width: 100%;
+	height: 30px;
+	background-color: #e9e9e9;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 10px, rgba(255,255,255,.5) 30px);
+}
+
+.disiplinas .grafico div{
+	background:  rgb(50,84,101);
+	color: #ffffff;
+	height: 30px;
+	text-align: center;
+	padding: 10px;
+}
+
+.contacto{
+	background: rgb(50,84,101);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.contacto .titulo, .contacto .descipcion {
+	color: #ffffff;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.contacto a{
+	color: rgb(50,84,101);
+	background: rgb(255,254,183);
+	padding: 15px 25px 15px 25px;
+	margin-bottom: 50px;
+	text-decoration: none;
+	border-radius: 5px;
+
+}
+
+
