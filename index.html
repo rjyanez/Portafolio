@@ -1,10 +1,105 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-    </head>
-    <body>
-        <h1>Prueba Numero 1</h1>
-    </body>
-</html> 
+	<head>
+		<title>Reichel J. Yanez | Web Developer</title>
+		<meta charser="utf-8" />
+		<link rel="stylesheet" href="css/app.css" />
+	</head>
+	<body>
+		<header class="header" id="inicio"> <!--header-->
+			<h1>REICHEL J.<br>YANEZ</h1> <!--titulo-->
+			<h2>WEB DEVELOPER</h2> <!--subtitulo-->						
+				<nav class="menu"> <!--menu-->
+				<ul>
+					<li>
+						<a href="#inicio">INICIO</a>
+					</li>
+					<li>
+						<a href="#portafolio">PORTAFOLIO</a>
+					</li>
+					<li>
+						<a href="#aptitudes">APTITUDES</a>
+					</li>
+					<li>
+						<a href="#contacto">CONTACTO</a>
+					</li>
+				</ul>
+			</nav>
+		</header>		
+		<section id="portafolio"> <!--portafolio-->
+			<h3 class="titulo">MI PORTAFOLIO</h3>
+			<p class="descipcion">esta es una pequeña seleccion de mis trabajos hasta la fecha<p>
+			<article class="proyecto">
+				<div class="media">
+					<div></div>
+					<img src="img/proyect1.jpg" />
+				</div>
+				<div class="resumen izquierda">
+					<h3>Poyecto Uno</h3>
+					<p>Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus tristique nunc vitae pellentesque. Nam vestibulum in ante lobortis euismod. </p>
+				</div>
+			</article>
+			<article class="proyecto">
+				<div class="resumen derecha">
+					<h3 >Poyecto Dos</h3>
+					<p> Etiam eu tellus eu tortor efficitur placerat. Morbi purus turpis, varius ac nisl quis, vestibulum malesuada risus. Donec blandit vehicula tincidunt</p>
+				</div>
+				<div class="media">
+					<div></div>
+					<img src="img/proyect2.jpg" />
+				</div>
+			</article>
+		</section>
+		<section id="aptitudes"> <!--aptitudes-->
+			<h3 class="titulo">MIS APTITUDES</h3>
+			<p class="descipcion">como web developer me he desarrollado en las siguentas disiplinas<p>
+			<div class="disiplinas"><!--disiplinas-->
+				<div><!--mitad--> 
+					<p><i></i>HTML / CSS</p>
+					<div class="grafico"><!--grafico-->
+						<div style="width:100%;"><!--barra-->
+							100%
+						</div>
+					</div>
+					<p><i></i>PHP</p>
+					<div class="grafico"><!--grafico-->
+						<div style="width:90%;"><!--barra-->
+							90%
+						</div>
+					</div>
+					<p><i></i>CAKEPHP</p>
+					<div class="grafico"><!--grafico-->
+						<div style="width:80%;"><!--barra-->
+							80%
+						</div>
+					</div>
+				</div>
+				<div><!--mitad--> 
+					<p><i></i>JAVASCRIPT / JQUERY</p>
+					<div class="grafico"><!--grafico-->
+						<div style="width:70%;"><!--barra-->
+							70%
+						</div>
+					</div>
+					<p><i></i>LARAVEL</p>
+					<div class="grafico"><!--grafico-->
+						<div style="width:50%;"><!--barra-->
+							50%
+						</div>
+					</div>
+					<p><i></i>SQL</p>
+					<div class="grafico"><!--grafico-->
+						<div style="width:60%;"><!--barra-->
+							60%
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contacto"> <!--contacto-->
+			<h3 class="titulo">CONTACTA ME</h3>
+			<p class="descipcion">para trabajar conmigo puedes escribirme un correo electronico, estaré encantada en responderte!<p>
+			<a href="">conversemos</a>
+		</section>
+	</body>
+</html>
