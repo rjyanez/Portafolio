@@ -4,16 +4,17 @@
 		<title>Reichel J. Yanez | Web Developer</title>
 		<meta charser="utf-8" />
 		<link rel="stylesheet" href="css/app.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	</head>
 	<body>
 		<header class="header" id="inicio"> <!--header-->
 			<h1>REICHEL J.<br>YANEZ</h1> <!--titulo-->
 			<h2>WEB DEVELOPER</h2> <!--subtitulo-->						
-				<nav class="menu"> <!--menu-->
+				<nav class="menu menu-top" id="menu" > <!--menu-->
 				<ul>
 					<li>
 						<a href="#inicio">INICIO</a>
-					</li>
+					</li>					
 					<li>
 						<a href="#portafolio">PORTAFOLIO</a>
 					</li>
@@ -30,25 +31,15 @@
 			<h2 class="titulo">MI PORTAFOLIO</h2>
 			<p class="descipcion">esta es una pequeña seleccion de mis trabajos hasta la fecha<p>
 			<article class="proyecto">
-				<div class="media">
+				<div class="media-derecha">
 					<div></div>
-					<img src="img/proyect1.jpg" />
+					<img src="img/proyect1.png" />
 				</div>
 				<div class="resumen izquierda">
-					<h3>Poyecto Uno</h3>
-					<p>Lorem  ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus tristique nunc vitae pellentesque. Nam vestibulum in ante lobortis euismod. </p>
+					<h3>SINDE</h3>
+					<p>Sistema de Solicitud de Instalaciones Deportivas del Instituto Nacional de Deporte</p>
 				</div>
-			</article>
-			<article class="proyecto">
-				<div class="resumen derecha">
-					<h3>Poyecto Dos</h3>
-					<p> Etiam eu tellus eu tortor efficitur placerat. Morbi purus turpis, varius ac nisl quis, vestibulum malesuada risus. Donec blandit vehicula tincidunt</p>
-				</div>
-				<div class="media">
-					<div></div>
-					<img src="img/proyect2.jpg" />
-				</div>
-			</article>
+			</article>			
 		</section>
 		<section id="aptitudes"> <!--aptitudes-->
 			<h2 class="titulo">MIS APTITUDES</h2>
@@ -57,19 +48,19 @@
 				<div><!--mitad--> 
 					<p><i></i>HTML / CSS</p>
 					<div class="grafico"><!--grafico-->
-						<div style="width:100%;"><!--barra-->
+						<div class="brillo" style="width:100%;"><!--barra-->
 							100%
 						</div>
 					</div>
 					<p><i></i>PHP</p>
 					<div class="grafico"><!--grafico-->
-						<div style="width:90%;"><!--barra-->
+						<div class="brillo" style="width:90%;"><!--barra-->
 							90%
 						</div>
 					</div>
 					<p><i></i>CAKEPHP</p>
 					<div class="grafico"><!--grafico-->
-						<div style="width:80%;"><!--barra-->
+						<div class="brillo" style="width:80%;"><!--barra-->
 							80%
 						</div>
 					</div>
@@ -77,19 +68,19 @@
 				<div><!--mitad--> 
 					<p><i></i>JAVASCRIPT / JQUERY</p>
 					<div class="grafico"><!--grafico-->
-						<div style="width:70%;"><!--barra-->
+						<div class="brillo" style="width:70%;"><!--barra-->
 							70%
 						</div>
 					</div>
 					<p><i></i>LARAVEL</p>
 					<div class="grafico"><!--grafico-->
-						<div style="width:50%;"><!--barra-->
+						<div class="brillo" style="width:50%;"><!--barra-->
 							50%
 						</div>
 					</div>
 					<p><i></i>SQL</p>
 					<div class="grafico"><!--grafico-->
-						<div style="width:60%;"><!--barra-->
+						<div class="brillo" style="width:60%;"><!--barra-->
 							60%
 						</div>
 					</div>
@@ -98,8 +89,13 @@
 		</section>
 		<section id="contacto" class="contacto"> <!--contacto-->
 			<h2 class="titulo">CONTACTA ME</h2>
-			<p class="descipcion">para trabajar conmigo puedes escribirme un correo electronico, estaré encantada en responderte!</p>
-			<a href="mailto:reichelrei@gmail.com?subject=Trabajemos Juntos!">conversemos</a>
+			<div>
+				<a class="brillo" href=""><i class="fa fa-linkedin"></i></a>
+				<a class="brillo" href=""><i class="fa fa-envelope"></i></a>				
+			</div>
 		</section>
+		<footer>
+		</footer>
+		<script src="js/app.js"></script>
 	</body>
 </html>
