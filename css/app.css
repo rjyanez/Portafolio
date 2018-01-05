@@ -60,13 +60,18 @@ i{
 	padding-top: 100px;
 	margin-left: 7%;	
 }
-.header h2{
-	color: #000000;
+.header h2{	
 	background-color: rgb(255,254,183); 
 	margin-left: 7%;
 	margin-bottom:240px;
 	display: inline-block;
 	padding: 8px 20px;	
+}
+.wrap{
+	color: #000000;
+	font-family: 'Bitter', serif;
+	font-size: 24px;
+	line-height: 44,8px;
 }
 /* Estilos del Menu */
 .menu{
