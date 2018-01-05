@@ -34,11 +34,11 @@ i{
 
 /* Clases generales */
 .titulo{
-	padding-top: 70px;
+	padding-top: 80px;
 	text-align: center;	
 }
 .descipcion{
-	padding:20px 20px 30px 20px;
+	padding:20px 20px 50px 20px;
 	text-align: center;
 }
 /* Portada */
@@ -57,14 +57,14 @@ i{
 	line-height: 90px;
 	font-size: 95px;
 	font-weight: bold;
-	padding-top: 13%;
+	padding-top: 100px;
 	margin-left: 7%;	
 }
 .header h2{
 	color: #000000;
 	background-color: rgb(255,254,183); 
 	margin-left: 7%;
-	margin-bottom: 15%;
+	margin-bottom:240px;
 	display: inline-block;
 	padding: 8px 20px;	
 }
@@ -76,7 +76,7 @@ i{
 	float: right;	
 }
 .menu li{ 
-	padding: 15px 25px;
+	padding: 5px 10px;
 	display: inline-block;
 }
 .menu-top{
@@ -215,19 +215,22 @@ i{
 	  rgba(255, 255, 255, 0.5) 92%,
 	  rgba(255, 255, 255, 0.0) 100%
 	);
-  }
+}
     
-  .brillo:hover:after {
+.brillo:hover:after {
 	opacity: 1;
 	top: -30%;
 	left: -30%;
 	transition-property: left, top, opacity;
 	transition-duration: 0.7s, 0.7s, 0.15s;
 	transition-timing-function: ease;
-  }
+}
     
-  .brillo:active:after {
+.brillo:active:after {
 	opacity: 0;
-  }
+}
 
+.hide {
+	visibility:hidden;
+}
 

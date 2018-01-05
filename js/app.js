@@ -15,12 +15,9 @@ function myFunction() {
 
 // Efectos de las animaciones
 
-$("#titulo").waypoint(function() {
-	$(this).toggleClass($(this).data('animated'));
-},
-{ offset: 'bottom-in-view' });
-/*
-$("[class*='animated']").waypoint(function() {
-	$(this).toggleClass($(this).data('animated'));
-}); */
-/* http://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css */
+$( document ).ready(function() {
+  $(".animated").waypoint(function() {
+    $(this).removeClass('hide');
+    $(this).addClass($(this).data('animated'));
+  }, { offset: '90%'});
+});
