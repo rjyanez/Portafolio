@@ -5,6 +5,7 @@
 		<meta charser="utf-8" />
 		<link rel="stylesheet" href="css/app.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	</head>
 	<body>
 		<header class="header" id="inicio"> <!--header-->
@@ -28,10 +29,10 @@
 			</nav>
 		</header>		
 		<section id="portafolio"> <!--portafolio-->
-			<h2 class="titulo">MI PORTAFOLIO</h2>
+			<h2 class="titulo animated" id="titulo" data-animated="slideInDown" >MI PORTAFOLIO</h2>
 			<p class="descipcion">esta es una pequeña seleccion de mis trabajos hasta la fecha<p>
 			<article class="proyecto">
-				<div class="media-derecha">
+				<div class="media-derecha animated" data-animated="slideInLeft">
 					<div></div>
 					<img src="img/proyect1.png" />
 				</div>
@@ -88,7 +89,7 @@
 			</div>
 		</section>
 		<section id="contacto" class="contacto"> <!--contacto-->
-			<h2 class="titulo">CONTACTA ME</h2>
+			<h2 class="titulo animated" data-animated="fadeInLeft" id="element-to-animate">CONTACTA ME</h2>
 			<div>
 				<a class="brillo" href=""><i class="fa fa-linkedin"></i></a>
 				<a class="brillo" href=""><i class="fa fa-envelope"></i></a>				
@@ -96,6 +97,8 @@
 		</section>
 		<footer>
 		</footer>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
 		<script src="js/app.js"></script>
 	</body>
 </html>

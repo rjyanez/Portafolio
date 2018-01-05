@@ -12,3 +12,15 @@ function myFunction() {
     navbar.classList.add("menu-top");
   }
 }
+
+// Efectos de las animaciones
+
+$("#titulo").waypoint(function() {
+	$(this).toggleClass($(this).data('animated'));
+},
+{ offset: 'bottom-in-view' });
+/*
+$("[class*='animated']").waypoint(function() {
+	$(this).toggleClass($(this).data('animated'));
+}); */
+/* http://www.oxygenna.com/tutorials/scroll-animations-using-waypoints-js-animate-css */
