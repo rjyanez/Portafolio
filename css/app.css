@@ -6,7 +6,6 @@
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	border:0;
-	color: #000000;
 	font-size: 16px;
 	line-height: 22.4px;
 }
@@ -30,6 +29,12 @@ a {
 i{
 	color: rgb(50,84,101);
 }
+footer{
+	background: #000000;
+	color: lightslategray;
+	padding: 10px;
+	text-align: center;
+}
 /* Clases del proyecto */
 
 /* Clases generales */
@@ -43,7 +48,7 @@ i{
 }
 /* Portada */
 .header{
-	background-image: url('../img/portada.png');
+	background-image: url('../img/portada.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%; 
@@ -61,7 +66,7 @@ i{
 	margin-left: 7%;	
 }
 .header h2{	
-	background-color: rgb(255,254,183); 
+	background-image: linear-gradient(to left,rgba(255,254,183, 1) 30%,rgba(208, 150, 122,1) 100%);
 	margin-left: 7%;
 	margin-bottom:240px;
 	display: inline-block;
@@ -103,11 +108,13 @@ i{
 	color: rgb(50,84,101);
 }
 /* Seccion de portafolio */
+#portafolio{
+	background-color: rgb(243,243,243);
+}
 .proyecto{ 
 	width:100%;
 	display: flex;
-	flex-wrap: wrap;
-	background-color: rgb(243,243,243);	
+	flex-wrap: wrap;		
 }
 .proyecto div{
 	width: 50%;
@@ -118,16 +125,32 @@ i{
 	flex-direction: column; 
 	position: relative;   
 }
-.proyecto img {
-	width: 100%;
-	height: 420px;
+.proyecto div {
+	height: 500px;
 }
-.media-derecha {
+.media{
+	position: relative;
+}
+
+.media img, .media div {
+	width: 100%;
+	height: 420px; 
 	position: absolute;
-	top: -20px;
-	left: 30px;
 	box-shadow: 9px 9px 21px -8px rgba(0,0,0,0.75);
 }
+
+.media div{
+	background-image: linear-gradient(to top, rgba(126, 87, 112, 0.5) 0%, rgba(255,254,183, 0.5) 30%,rgba(208, 150, 122,0.5) 100%);
+} 
+.media-derecha img{
+	top: -20px;
+	left: 30px;
+}
+.media-derecha div{
+	top: 30px;
+	left: 80px;
+} 
+
 .derecha{
 	align-items: flex-end;
 }
@@ -185,6 +208,7 @@ i{
 	color: #ffffff;
 	padding-top: 50px;
 	padding-bottom: 20px;
+	margin-bottom: 30px;
 }
 .contacto div{
 	width: 100%;
@@ -193,12 +217,13 @@ i{
 	padding-bottom: 50px;
 }
 .contacto a{
-	background: rgb(255,254,183);
+	background-image: linear-gradient(to top,rgba(255,254,183, 1) 30%,rgba(208, 150, 122,1) 100%);
     border-radius: 5px;
 	padding: 10px 15px;
-	margin: 0 10px 0 10px;	
 	font-size: 20px;
+	margin: 0 10px 0 10px;
 }
+/* Efecto de Brillo */
 .brillo{
 	position: relative;
 	overflow: hidden;
@@ -237,5 +262,38 @@ i{
 
 .hide {
 	visibility:hidden;
+}
+
+/* Seccion de Experiencia */
+.experiencia{
+	text-align: center;
+}
+
+.progreso {
+	margin: 70px 0;
+	list-style-type: none;
+}
+
+.progreso li{
+	display: inline-block;
+	margin: 0px -5px;
+	background: rgb(50,84,101);
+}
+
+.progreso .conector {
+	width: 30%;
+	padding: 1px 0;
+}
+.progreso .contenido {
+	color: rgb(255,254,183);
+	padding: 10px 15px;
+	border-radius: 60px;
+}
+.progreso .contenido-vacio {
+	color: rgb(50,84,101);
+	padding: 0 15px;
+	font-size: 32px;
+	font-style: inherit;
+	background: transparent;
 }
 
