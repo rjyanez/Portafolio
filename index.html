@@ -8,13 +8,15 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	</head>
 	<body>
-		<header class="header" id="inicio"> <!--header-->
-			<h1>REICHEL J.<br>YANEZ</h1> <!--titulo-->
-			<h2> 
-				<a href="" class="typewrite" data-period="2000" data-type='[ "FULL-STACK DEVELOPER", "FRONT-END DEVELOPER", "BACK-END DEVELOPER" ]'>
-					<span class="wrap"></span>
-			  	</a>
-			</h2> <!--subtitulo-->						
+		<header id="inicio"> <!--header-->
+			<div class="portada contenedor" >
+				<h1>REICHEL J.<br>YANEZ</h1> <!--titulo-->
+				<h2> 
+					<a href="" class="tipeo" data-period="2000" data-type='[ "FULL-STACK DEVELOPER", "FRONT-END DEVELOPER", "BACK-END DEVELOPER" ]'>
+						<span class="escritura"></span>
+					  </a>
+				</h2> <!--subtitulo-->		
+			</div>
 			<nav class="menu menu-top" id="menu" > <!--menu-->
 				<ul>
 					<li>
@@ -24,7 +26,7 @@
 						<a href="#portafolio">PORTAFOLIO</a>
 					</li>
 					<li>
-						<a href="#aptitudes">HABILIDADES</a>
+						<a href="#habilidades">HABILIDADES</a>
 					</li>
 					<li>
 						<a href="#contacto">CONTACTO</a>
@@ -32,7 +34,7 @@
 				</ul>
 			</nav>
 		</header>
-		<section class="experiencia">
+		<section id="experiencia">
 			<ul class="progreso" >
 				<li class="contenido-vacio">2016</li>
 				<li class="conector"></li>
@@ -42,70 +44,97 @@
 			</ul>
 		</section>		
 		<section id="portafolio"> <!--portafolio-->
-			<h2 class="titulo" >PORTAFOLIO</h2>
-			<p class="descipcion">esta es una pequeña seleccion de mis trabajos hasta la fecha<p>
-			<article class="proyecto">
-				<div class="media media-derecha animated hide" data-animated="bounceInLeft" >
-					<div></div>
+			<div class="section-header">
+				<h2 class="titulo" >PORTAFOLIO</h2>
+				<p class="descipcion">esta es una pequeña seleccion de mis trabajos hasta la fecha</p>
+			</div>
+			<article class="contenedor">
+				<div class="img-contenedor animated hide" data-animated="bounceInLeft" >
+					<div class="abajo"></div>
 					<img src="img/proyect1.jpg" />
+					<div class="arriba">						
+						<div class="boton">
+							<a href="#">DETALLES</a>
+						</div>
+					</div>
 				</div>
-				<div class="resumen izquierda animated hide" data-animated="bounceInRight" >
+				<div class="izquierda animated hide" data-animated="bounceInRight" >
 					<h3>SINDE</h3>
-					<p>Sistema de Solicitud de Instalaciones Deportivas del Instituto Nacional de Deporte</p>
+					<p>FRONT-END DEVELOPER / BACK-END DEVELOPER</p>
 				</div>
 			</article>			
 		</section>
-		<section id="aptitudes"> <!--aptitudes-->
-			<h2 class="titulo" >HABILIDADES</h2>
-			<p class="descipcion">como web developer me he desarrollado en las siguentas disiplinas<p>
-			<div class="disiplinas"><!--disiplinas-->
-				<div><!--mitad--> 
-					<p class="animated hide" data-animated="bounceInLeft"><i></i>HTML / CSS</p>
-					<div class="grafico  animated hide" data-animated="fadeInLeft"><!--grafico-->
-						<div class="brillo" style="width:100%;"><!--barra-->
-							100%
+		<section id="habilidades"> <!--habilidades-->
+			<div class="section-header">
+				<h2 class="titulo" >HABILIDADES</h2>
+				<p class="descipcion">como web developer me he desarrollado en las siguentas disiplinas<p>
+			</div>
+			<div class="contenedor"><!--disiplinas-->
+				<div class="disiplinas"><!--mitad--> 
+					<div class="grafico-contenedor">
+						<p class="animated hide" data-animated="bounceInLeft"><i></i>HTML / CSS</p>
+						<div class="grafico  animated hide" data-animated="fadeInLeft"><!--grafico-->
+							<div class="brillo" style="width:100%;"><!--barra-->
+								100%
+							</div>
 						</div>
 					</div>
-					<p class="animated hide" data-animated="bounceInLeft"><i></i>PHP</p>
-					<div class="grafico animated hide" data-animated="fadeInLeft"><!--grafico-->
-						<div class="brillo" style="width:90%;"><!--barra-->
-							90%
+					<div class="grafico-contenedor">
+						<p class="animated hide" data-animated="bounceInLeft"><i></i>PHP</p>
+						<div class="grafico animated hide" data-animated="fadeInLeft"><!--grafico-->
+							<div class="brillo" style="width:90%;"><!--barra-->
+								90%
+							</div>
 						</div>
 					</div>
-					<p class="animated hide" data-animated="bounceInLeft"><i></i>CAKEPHP</p>
-					<div class="grafico animated hide" data-animated="fadeInLeft"><!--grafico-->
-						<div class="brillo" style="width:80%;"><!--barra-->
-							80%
+					<div class="grafico-contenedor">
+						<p class="animated hide" data-animated="bounceInLeft"><i></i>CAKEPHP</p>
+						<div class="grafico animated hide" data-animated="fadeInLeft"><!--grafico-->
+							<div class="brillo" style="width:80%;"><!--barra-->
+								80%
+							</div>
 						</div>
 					</div>
 				</div>
-				<div><!--mitad--> 
-					<p class="animated hide" data-animated="bounceInRight"><i></i>JAVASCRIPT / JQUERY</p>
-					<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
-						<div class="brillo" style="width:70%;"><!--barra-->
-							70%
+				<div class="disiplinas"><!--mitad--> 
+					<div class="grafico-contenedor">
+						<p class="animated hide" data-animated="bounceInRight"><i></i>JAVASCRIPT / JQUERY</p>
+						<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
+							<div class="brillo" style="width:70%;"><!--barra-->
+								70%
+							</div>
 						</div>
 					</div>
-					<p class="animated hide" data-animated="bounceInRight"><i></i>LARAVEL</p>
-					<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
-						<div class="brillo" style="width:50%;"><!--barra-->
-							50%
+					<div class="grafico-contenedor">
+						<p class="animated hide" data-animated="bounceInRight"><i></i>LARAVEL</p>
+						<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
+							<div class="brillo" style="width:50%;"><!--barra-->
+								50%
+							</div>
 						</div>
 					</div>
-					<p class="animated hide" data-animated="bounceInRight"><i></i>SQL</p>
-					<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
-						<div class="brillo" style="width:60%;"><!--barra-->
-							60%
+					<div class="grafico-contenedor">
+						<p class="animated hide" data-animated="bounceInRight"><i></i>SQL</p>
+						<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
+							<div class="brillo" style="width:60%;"><!--barra-->
+								60%
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="contacto" class="contacto"> <!--contacto-->
-			<h2 class="titulo">CONTACTAME</h2>
-			<div>
-				<a class="brillo animated hide" data-animated="bounce" href="https://www.linkedin.com/in/reichel-j-yanez/" target="_blank"><i class="fa fa-linkedin"></i></a>
-				<a class="brillo animated hide" data-animated="bounce" href="mailto:reichelrei@gmail.com?subject=Trabajemos Juntos!"><i class="fa fa-envelope"></i></a>				
+		<section id="contacto"> <!--contacto-->
+			<div class="section-header">
+				<h2 class="titulo">CONTACTAME</h2>
+				<ul class="contactos">
+					<li class="brillo animated hide" data-animated="bounce">
+						<a   href="https://www.linkedin.com/in/reichel-j-yanez/" target="_blank"><spam class="fa fa-linkedin"></spam></a>
+					</li>
+					<li class="brillo animated hide" data-animated="bounce">
+						<a href="mailto:reichelrei@gmail.com?subject=Trabajemos Juntos!"><spam class="fa fa-envelope"></spam></a>			
+					</li>
+				</ul>
 			</div>
 		</section>
 		<footer>

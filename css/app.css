@@ -1,15 +1,24 @@
-/* fuentes del proyecto */
-@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+ @import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
 
-/* Estilos generales */
+
 * {
+	margin: 0;
+	border:0;
+	padding: 0;
+}
+body {
 	font-family: 'Raleway', sans-serif;
 	margin: 0;
 	border:0;
 	font-size: 16px;
 	line-height: 22.4px;
+	display: flex;
+	flex-direction: column;
 }
- /* Estilos de Etiquetas */
+section, header, footer{
+	flex: 1;
+}
+
 h2, h3, h4{
 	font-family: 'Bitter', serif;
 }
@@ -22,12 +31,12 @@ h3{
 	font-size: 24px;
 	line-height: 33,6px;
 }
-a {
-	color: #ffffff;
-	text-decoration: none;	
+section .titulo, section .descipcion{
+	width: 100%;
+	text-align: center;	
 }
-i{
-	color: rgb(50,84,101);
+section .titulo{
+	margin-bottom: 15px;
 }
 footer{
 	background: #000000;
@@ -35,52 +44,57 @@ footer{
 	padding: 10px;
 	text-align: center;
 }
-/* Clases del proyecto */
-
-/* Clases generales */
-.titulo{
-	padding-top: 80px;
-	text-align: center;	
-}
-.descipcion{
-	padding:20px 20px 50px 20px;
-	text-align: center;
-}
-/* Portada */
-.header{
+header{
 	background-image: url('../img/portada.jpg');
-	background-repeat: no-repeat;
 	background-size: cover;
-	width: 100%; 
-	display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
 }
-.header h1{
+header h1{
 	color: #ffffff;
 	line-height: 90px;
 	font-size: 95px;
 	font-weight: bold;
-	padding-top: 100px;
-	margin-left: 7%;	
 }
-.header h2{	
-	background-image: linear-gradient(to left,rgba(255,254,183, 1) 30%,rgba(208, 150, 122,1) 100%);
-	margin-left: 7%;
-	margin-bottom:240px;
-	display: inline-block;
-	padding: 8px 20px;	
+header h2{	
+	background: rgba(255,254,183, 1);
+	padding: 8px 20px;
+	margin-top: 10px; 	
 }
-.wrap{
+a {
+	text-decoration: none;	
+}
+.contenedor{
+	margin: 0 10%;
+}
+.hide {
+	visibility:hidden;
+}
+.section-header{
+	flex: 1;
+	height: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 80px 0 50px 0;
+}
+.portada{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: 90vh;
+}
+.escritura{
 	color: #000000;
 	font-family: 'Bitter', serif;
 	font-size: 24px;
 	line-height: 44,8px;
 }
-/* Estilos del Menu */
 .menu{
 	width: 100%;	
+}
+.menu a {
+	color: #ffffff;
 }
 .menu ul{
 	float: right;	
@@ -90,16 +104,16 @@ footer{
 	display: inline-block;
 }
 .menu-top{
-	background-image: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%);/*  IE10+ */  	
-	background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* Mozilla Firefox   */	
-	background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* Opera */  	
-	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255,255,255,0)), color-stop(100, rgba(50,84,101,0.8))); /* Webkit (Safari/Chrome 10) */  	
-	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* Webkit (Chrome 11+) */  	
-	background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); /* W3C Markup */  
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%);
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); 
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); 	
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255,255,255,0)), color-stop(100, rgba(50,84,101,0.8)));  	
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%);  	
+	background-image: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(50,84,101,0.8) 100%); 
 }
 .menu-bottom{
 	z-index: 1000;
-	background-image: linear-gradient(to right,  rgb(243, 243, 243) 0%,rgba(255,255,255,1) 50%); /* W3C Markup */  
+	background-image: linear-gradient(to right,  rgb(243, 243, 243) 0%,rgba(255,255,255,1) 50%); 
 	box-shadow: 0px 9px 21px -8px rgba(0,0,0,0.75);
 	position: fixed;
 	top: 0;
@@ -107,123 +121,180 @@ footer{
 .menu-bottom ul li a{
 	color: rgb(50,84,101);
 }
-/* Seccion de portafolio */
-#portafolio{
-	background-color: rgb(243,243,243);
-}
-.proyecto{ 
-	width:100%;
+#experiencia{
+	height: 30vh;
 	display: flex;
-	flex-wrap: wrap;		
-}
-.proyecto div{
-	width: 50%;
-	flex-grow:1;
-	display: flex;
-	flex-wrap: wrap;
-    justify-content: center;
-	flex-direction: column; 
-	position: relative;   
-}
-.proyecto div {
-	height: 500px;
-}
-.media{
-	position: relative;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
 }
 
-.media img, .media div {
+.progreso {
 	width: 100%;
-	height: 420px; 
+	display: block;
+}
+
+.progreso li{
+	display: inline-block;
+	margin: 0px -5px;
+	background: rgb(50,84,101);
+}
+.progreso .conector {
+	width: 30%;
+	padding: 1px 0;
+}
+.progreso .contenido {
+	color: rgb(255,254,183);
+	padding: 10px 15px;
+	border-radius: 60px;
+}
+.progreso .contenido-vacio {
+	color: rgb(50,84,101);
+	padding: 0 15px;
+	font-size: 32px;
+	font-style: inherit;
+	background: transparent;
+}
+#portafolio{
+	display: flex;
+	flex-direction: column;
+	background-color:rgb(250,250,250);
+}
+#portafolio article{
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(245,245,245);
+}
+#portafolio article div {
+	height: 50vh;
+	flex: 1;
+	flex-grow: 1;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#portafolio article .izquierda{
+	align-items: flex-start;
+	padding: 0 10px;
+}
+#portafolio .img-contenedor img{
+	width: 100%;
+	height: 50vh;
 	position: absolute;
+	top: 0;
+	left: -30px;
 	box-shadow: 9px 9px 21px -8px rgba(0,0,0,0.75);
 }
-
-.media div{
+#portafolio .img-contenedor .abajo {
+	height: 50vh;
+	position: absolute;
+	top: -30px;
+	left: 0px;	
+	width: 100%;
+	box-shadow: 9px 9px 21px -8px rgba(0,0,0,0.75);
 	background-image: linear-gradient(to top, rgba(126, 87, 112, 0.5) 0%, rgba(255,254,183, 0.5) 30%,rgba(208, 150, 122,0.5) 100%);
-} 
-.media-derecha img{
-	top: -20px;
-	left: 30px;
-}
-.media-derecha div{
-	top: 30px;
-	left: 80px;
-} 
-
-.derecha{
-	align-items: flex-end;
-}
-.izquierda{
-	align-items: flex-start;
-}
-.resumen h3{
-	padding: 10px 100px 0 100px;
-	display: inline-block;
-}
-.resumen p{
-	padding: 10px 100px 10px 100px ;
-	text-align: justify;
-}
-/* Seccion de aptitudes */
-.disiplinas{ 
-	width:100%;
+}  
+#portafolio .img-contenedor  .arriba {
+	height: 50vh;
+	position: absolute;
+	top: 0;
+	left: -30px;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}  
+#portafolio .img-contenedor .arriba .boton {
+	text-align: center;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+#portafolio .img-contenedor .boton a {
+	padding: 12px 48px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	border: solid 2px rgb(255, 255, 255);
+}
+#portafolio .img-contenedor:hover .arriba, #portafolio .img-contenedor:hover .boton {
+	opacity: 1;
+}
+#habilidades{
+	display: flex;
+	flex-direction: column;
+}
+#habilidades .contenedor{
 	justify-content: space-around;
-	margin-bottom: 100px;
-}
-
-.disiplinas div{
-	width: 40%;
+	flex: 1;
 	display: flex;
 	flex-wrap: wrap;
-    justify-content: center;
-	flex-direction: column; 
-	position: relative;   
 }
-.disiplinas p{
+#habilidades .disiplinas{
+	padding-bottom: 10vh;
+	width: 45%;
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+} 
+.grafico-contenedor p{
 	padding: 15px 0 15px 0;
 }
-.disiplinas .grafico{
+.grafico-contenedor p:first-of-type{
+	padding: 0 0 15px 0;
+}
+.grafico-contenedor .grafico{
+	padding: 0;
 	width: 100%;
 	background-color: #e9e9e9;
-	background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,.5) 10px, rgba(255,255,255,.5) 30px);
 }
-
-.disiplinas .grafico div{
+.grafico-contenedor .grafico div{
+	padding: 0;
 	background:  rgb(50,84,101);
 	color: #ffffff;
 	text-align: center;
 }
-/* Seccion de Contacto */
-.contacto{
+#contacto{
 	background: rgb(50,84,101);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.contacto .titulo {
+#contacto .titulo {
 	color: #ffffff;
-	padding-top: 50px;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
 }
-.contacto div{
+#contacto div{
 	width: 100%;
+	flex: 1;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 50px;
+	
 }
-.contacto a{
-	background-image: linear-gradient(to top,rgba(255,254,183, 1) 30%,rgba(208, 150, 122,1) 100%);
-    border-radius: 5px;
+.contactos{
+	padding-top: 20px;
+	width: 100%;	
+	text-align: center;
+}
+.contactos a {
+	color: #ffffff;
+}
+
+.contactos li{
+	display: inline-block;
+	border: 1px solid rgb(255,254,183);
 	padding: 10px 15px;
-	font-size: 20px;
-	margin: 0 10px 0 10px;
 }
-/* Efecto de Brillo */
+.contactos a{
+	padding: auto;
+	background: transparent;
+	color: rgb(255,254,183);
+	font-size: 20px;
+	width: 100%;
+}
 .brillo{
 	position: relative;
 	overflow: hidden;
@@ -245,8 +316,7 @@ footer{
 	  rgba(255, 255, 255, 0.5) 92%,
 	  rgba(255, 255, 255, 0.0) 100%
 	);
-}
-    
+}    
 .brillo:hover:after {
 	opacity: 1;
 	top: -30%;
@@ -254,46 +324,7 @@ footer{
 	transition-property: left, top, opacity;
 	transition-duration: 0.7s, 0.7s, 0.15s;
 	transition-timing-function: ease;
-}
-    
+}    
 .brillo:active:after {
 	opacity: 0;
 }
-
-.hide {
-	visibility:hidden;
-}
-
-/* Seccion de Experiencia */
-.experiencia{
-	text-align: center;
-}
-
-.progreso {
-	margin: 70px 0;
-	list-style-type: none;
-}
-
-.progreso li{
-	display: inline-block;
-	margin: 0px -5px;
-	background: rgb(50,84,101);
-}
-
-.progreso .conector {
-	width: 30%;
-	padding: 1px 0;
-}
-.progreso .contenido {
-	color: rgb(255,254,183);
-	padding: 10px 15px;
-	border-radius: 60px;
-}
-.progreso .contenido-vacio {
-	color: rgb(50,84,101);
-	padding: 0 15px;
-	font-size: 32px;
-	font-style: inherit;
-	background: transparent;
-}
-

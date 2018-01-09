@@ -20,7 +20,7 @@ var i = this.loopNum % this.toRotate.length;
     this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="escritura">'+this.txt+'</span>';
 
   var that = this;
   var delta = 200 - Math.random() * 100;
@@ -42,7 +42,7 @@ var i = this.loopNum % this.toRotate.length;
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
+  var elements = document.getElementsByClassName('tipeo');
   for (var i=0; i<elements.length; i++) {
       var toRotate = elements[i].getAttribute('data-type');
       var period = elements[i].getAttribute('data-period');
@@ -53,7 +53,7 @@ window.onload = function() {
 
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 1px solid #000}";
+  css.innerHTML = ".tipeo > .escritura { border-right: 1px solid #000}";
   document.body.appendChild(css);
 };
 
