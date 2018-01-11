@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
 
 
 * {
@@ -51,7 +51,7 @@ header{
 header h1{
 	color: #ffffff;
 	line-height: 90px;
-	font-size: 95px;
+	font-size: 100px;
 	font-weight: bold;
 }
 header h2{	
@@ -223,6 +223,7 @@ a {
 #portafolio .img-contenedor:hover .arriba, #portafolio .img-contenedor:hover .boton {
 	opacity: 1;
 }
+/* ------------------------------------------------ */
 #habilidades{
 	display: flex;
 	flex-direction: column;
@@ -234,12 +235,53 @@ a {
 	flex-wrap: wrap;
 }
 #habilidades .disiplinas{
-	padding-bottom: 10vh;
-	width: 45%;
+	padding-bottom: 5vh;
+	width: 100%;
 	display: flex;
-	flex-direction: column;	
 	justify-content: center;
 } 
+.disiplinas-item{
+	flex: 1;
+	flex-grow: 1;
+	width: 50px;
+	margin: 10px;
+}
+.contenedor-bar {
+	position: relative;
+    height: 50vh;
+}
+.bar-limit {
+    position: absolute;
+    width: 100%;
+    bottom: 33px;
+    border-radius: 2px;
+	background-color: #00bcd4;
+}
+.bar-title {
+    font-size: 12px;
+	top: -100px;
+	color: #00bcd4;
+}
+.bar-title, .skill-count {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+}
+.bar {
+    height: 70%;
+    width: 1px;
+    position: absolute;
+    top: -70px;
+	left: 50%;
+	background-color: #00bcd4;
+}
+.skill-count {
+    bottom: 0;
+	color: #00bcd4;
+}
+
 .grafico-contenedor p{
 	padding: 15px 0 15px 0;
 }
@@ -257,6 +299,7 @@ a {
 	color: #ffffff;
 	text-align: center;
 }
+/* ----------------------------------------------- */
 #contacto{
 	background: rgb(50,84,101);
 	display: flex;
