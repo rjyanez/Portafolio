@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<link rel="stylesheet" href="css/app.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<link rel="stylesheet" href="css/lib/animate_v3.5.2.min.css">
 	</head>
 	<body>
 		<header id="inicio"> <!--header-->
@@ -34,7 +34,7 @@
 				</ul>
 			</nav>
 		</header>
-		<section id="experiencia">
+		<section id="experiencia" class="section-header">
 			<ul class="progreso" >
 				<li class="contenido-vacio">2016</li>
 				<li class="conector"></li>
@@ -70,58 +70,71 @@
 				<p class="descipcion">como web developer me he desarrollado en las siguentas disiplinas<p>
 			</div>
 			<div class="contenedor"><!--disiplinas-->
-				<div class="disiplinas"><!--mitad--> 
-					<div class="grafico-contenedor">
-						<p class="animated hide" data-animated="bounceInLeft"><i></i>HTML / CSS</p>
-						<div class="grafico  animated hide" data-animated="fadeInLeft"><!--grafico-->
-							<div class="brillo" style="width:100%;"><!--barra-->
-								100%
+				<div class="disiplinas">										
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 100%;">
+								<span class="bar-title">HTML</span>
+								<div class="bar"></div>										
 							</div>
-						</div>
-					</div>
-					<div class="grafico-contenedor">
-						<p class="animated hide" data-animated="bounceInLeft"><i></i>PHP</p>
-						<div class="grafico animated hide" data-animated="fadeInLeft"><!--grafico-->
-							<div class="brillo" style="width:90%;"><!--barra-->
-								90%
+							<span class="bar-porcentaje">100%</span>
+						</div>						
+					</div>					
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 90%;">
+								<span class="bar-title">Css</span>
+								<div class="bar"></div>										
 							</div>
-						</div>
-					</div>
-					<div class="grafico-contenedor">
-						<p class="animated hide" data-animated="bounceInLeft"><i></i>CAKEPHP</p>
-						<div class="grafico animated hide" data-animated="fadeInLeft"><!--grafico-->
-							<div class="brillo" style="width:80%;"><!--barra-->
-								80%
+							<span class="bar-porcentaje">90%</span>
+						</div>						
+					</div>					
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 80%;">
+								<span class="bar-title">PHP</span>
+								<div class="bar"></div>										
 							</div>
-						</div>
-					</div>
-				</div>
-				<div class="disiplinas"><!--mitad--> 
-					<div class="grafico-contenedor">
-						<p class="animated hide" data-animated="bounceInRight"><i></i>JAVASCRIPT / JQUERY</p>
-						<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
-							<div class="brillo" style="width:70%;"><!--barra-->
-								70%
+							<span class="bar-porcentaje">80%</span>
+						</div>						
+					</div>					
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 50%;">
+								<span class="bar-title">JAVASCRIPT</span>
+								<div class="bar"></div>										
 							</div>
-						</div>
+							<span class="bar-porcentaje">50%</span>
+						</div>						
 					</div>
-					<div class="grafico-contenedor">
-						<p class="animated hide" data-animated="bounceInRight"><i></i>LARAVEL</p>
-						<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
-							<div class="brillo" style="width:50%;"><!--barra-->
-								50%
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 60%;">
+								<span class="bar-title">JQUERY</span>
+								<div class="bar"></div>										
 							</div>
-						</div>
-					</div>
-					<div class="grafico-contenedor">
-						<p class="animated hide" data-animated="bounceInRight"><i></i>SQL</p>
-						<div class="grafico animated hide" data-animated="fadeInRight"><!--grafico-->
-							<div class="brillo" style="width:60%;"><!--barra-->
-								60%
+							<span class="bar-porcentaje">60%</span>
+						</div>						
+					</div>						
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 70%;">
+								<span class="bar-title">SQL</span>
+								<div class="bar"></div>										
 							</div>
-						</div>
-					</div>
-				</div>
+							<span class="bar-porcentaje">70%</span>
+						</div>						
+					</div>					
+					<div class="disiplinas-item">
+						<div class="contenedor-bar">
+							<div class="bar-limit " style="height: 50%;">
+								<span class="bar-title">Photoshop</span>
+								<div class="bar"></div>										
+							</div>
+							<span class="bar-porcentaje">50%</span>
+						</div>						
+					</div>					
+				</div>				
 			</div>
 		</section>
 		<section id="contacto"> <!--contacto-->
@@ -140,8 +153,8 @@
 		<footer>
 			<small>&copy; Copyright 2018 Reichel J. Yanez</small>
 		</footer>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery_v2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/waypoints_v2.0.4.min.js"></script>
 		<script src="js/app.js"></script>
 	</body>
 </html>

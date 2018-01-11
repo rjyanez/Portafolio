@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
+ @import url('https://fonts.googleapis.com/css?family=Bitter|Raleway');
 
 
 * {
@@ -235,7 +235,7 @@ a {
 	flex-wrap: wrap;
 }
 #habilidades .disiplinas{
-	padding-bottom: 5vh;
+	padding: 5vh 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -243,10 +243,10 @@ a {
 .disiplinas-item{
 	flex: 1;
 	flex-grow: 1;
-	width: 50px;
 	margin: 10px;
 }
 .contenedor-bar {
+	width: 50px;
 	position: relative;
     height: 50vh;
 }
@@ -259,10 +259,10 @@ a {
 }
 .bar-title {
     font-size: 12px;
-	top: -100px;
+	top: -40px;
 	color: #00bcd4;
 }
-.bar-title, .skill-count {
+.bar-title, .bar-porcentaje {
     width: 100%;
     display: block;
     text-align: center;
@@ -273,11 +273,11 @@ a {
     height: 70%;
     width: 1px;
     position: absolute;
-    top: -70px;
+    top: -20px;
 	left: 50%;
 	background-color: #00bcd4;
 }
-.skill-count {
+.bar-porcentaje {
     bottom: 0;
 	color: #00bcd4;
 }
