@@ -150,11 +150,11 @@ a {
 }
 .progreso .conector {
 	width: 30%;
-	padding: .5px 0;
+	padding: 1px 0;
 }
 .progreso .contenido {
 	color: rgb(50,84,101);;
-	border: 1px solid rgb(50,84,101);
+	border: 3px solid rgb(50,84,101);
 	background: transparent; 
 	padding: 10px 15px;
 	border-radius: 60px;
@@ -306,33 +306,33 @@ a {
 .contactos a:hover{
 	color: rgb(255,254,183);
 }
-.services{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	
-}
-
-.services .services-sect{
-	flex: 1;
-	position: relative;
-} 
-.services .services-sect:first-child{
+.division{
 	height: 50vh;
 }
-.services .services-sect:last-child{
-	height: 30vh;
-}
-.services-media{
+.division#division_1{
 	background: url('../img/portada1.jpg');
 	background-size: cover;
 }
-
-.services-media div{
+.division#division_1 > div{
 	background: rgba(255,255,255,.5);
 	width: 100%;
 	height: 100%;
 } 
+.division#division_2{
+	background: url('../img/portada2.png');
+	background-size: cover;
+}
+.division#division_2 > div{
+	background: rgba(0,0,0,.5);
+	width: 100%;
+	height: 100%;
+} 
+.services{
+	position: relative;
+	overflow: visible;
+	padding-bottom: 30vh;
+}
+						
 
 .services-content{
 	position: absolute;
@@ -469,18 +469,17 @@ a {
 	right: 45%;
 	padding: 5px 0;
 	text-align: center;
-	opacity: 0;
 	transition-duration: 1s;
 	transition-timing-function: ease;
 	cursor: pointer;
 }
 .slider .slider-button span{
 	font-size: 32px;
-	color:  rgba(255,255,255,.3);
+	color:  rgba(255,255,255,.2);
 	padding: 5px 15px;
 }
-.slider .slider-button:hover{
-	opacity: 1;
+.slider .slider-button:hover span{
+	color:  rgba(255,255,255,.5);
 }
 .slider .slider-button:active span{
 	color: rgba(255,255,255,.8);
@@ -496,7 +495,7 @@ a {
 	height: 60vh;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	flex-direction: column;
 	color: #ffffff;
 }
